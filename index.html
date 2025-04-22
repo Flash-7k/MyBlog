@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">个人空间</a>
+            <div class="flex space-x-6">
+                <a href="#about" class="hover:text-indigo-600 transition-colors">关于我</a>
+                <a href="#gallery" class="hover:text-indigo-600 transition-colors">相册</a>
+                <a href="#social" class="hover:text-indigo-600 transition-colors">社交媒体</a>
+                <a href="#contact" class="hover:text-indigo-600 transition-colors">联系我</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <header class="relative bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">欢迎来到我的博客</h1>
+                <p class="text-xl opacity-90 mb-6">这里记录我的生活、想法和创作</p>
+                <button class="bg-white text-indigo-600 font-medium py-2 px-6 rounded-md hover:bg-opacity-90 transition-colors shadow-md">了解更多</button>
+            </div>
+            <div class="md:w-1/3 flex justify-center">
+                <div class="relative w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                    <img id="avatar" src="images/avatar.jpg" alt="我的头像" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden" style="height: 70px">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #f9fafb;"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- 关于我 -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">关于我</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
+                    <p class="text-lg leading-relaxed mb-4">
+                        你好！我是网站的主人。我热爱生活，喜欢探索新事物，记录美好瞬间。
+                    </p>
+                    <p class="text-lg leading-relaxed mb-4">
+                        我的兴趣爱好包括摄影、阅读和编程。通过这个个人博客，我希望能够分享我的经历和想法，连接志同道合的朋友。
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        无论你是偶然来到这里，还是专程拜访，我都希望你能在这个空间找到一些有趣或有用的内容。
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="max-w-md bg-gray-50 p-8 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4">个人简介</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <span class="w-24 font-medium">姓名：</span>
+                                <span>你的名字</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-24 font-medium">职业：</span>
+                                <span>你的职业</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-24 font-medium">爱好：</span>
+                                <span>摄影、阅读、编程</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-24 font-medium">所在地：</span>
+                                <span>你的所在地</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-24 font-medium">座右铭：</span>
+                                <span>生活不止眼前的苟且，还有诗和远方</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 相册 -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">生活瞬间</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/photo1.jpg" alt="生活照片" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 bg-white">
+                        <h3 class="font-medium text-lg">美好时光</h3>
+                        <p class="text-gray-600 mt-1">2023年夏日的回忆</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/photo2.jpg" alt="生活照片" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 bg-white">
+                        <h3 class="font-medium text-lg">旅行日记</h3>
+                        <p class="text-gray-600 mt-1">探索未知的土地</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/photo3.jpg" alt="生活照片" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 bg-white">
+                        <h3 class="font-medium text-lg">宁静时刻</h3>
+                        <p class="text-gray-600 mt-1">阅读与思考</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/photo4.jpg" alt="生活照片" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 bg-white">
+                        <h3 class="font-medium text-lg">创作灵感</h3>
+                        <p class="text-gray-600 mt-1">捕捉生活中的美</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/photo5.jpg" alt="生活照片" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 bg-white">
+                        <h3 class="font-medium text-lg">城市漫步</h3>
+                        <p class="text-gray-600 mt-1">城市中的宁静角落</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="images/photo6.jpg" alt="生活照片" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-4 bg-white">
+                        <h3 class="font-medium text-lg">自然探索</h3>
+                        <p class="text-gray-600 mt-1">大自然的奇妙瞬间</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <button id="loadMoreBtn" class="bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700 transition-colors shadow-md">加载更多</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社交媒体 -->
+    <section id="social" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">社交媒体</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <a href="#" class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-shadow hover:bg-indigo-50">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 mb-4">
+                        <i class="fab fa-weixin text-2xl"></i>
+                    </div>
+                    <h3 class="font-medium text-lg mb-2">微信</h3>
+                    <p class="text-center text-gray-600">关注我的公众号</p>
+                </a>
+                <a href="#" class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-shadow hover:bg-red-50">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-red-100 text-red-600 mb-4">
+                        <i class="fab fa-weibo text-2xl"></i>
+                    </div>
+                    <h3 class="font-medium text-lg mb-2">微博</h3>
+                    <p class="text-center text-gray-600">关注我的微博动态</p>
+                </a>
+                <a href="#" class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-shadow hover:bg-blue-50">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mb-4">
+                        <i class="fab fa-github text-2xl"></i>
+                    </div>
+                    <h3 class="font-medium text-lg mb-2">GitHub</h3>
+                    <p class="text-center text-gray-600">查看我的项目代码</p>
+                </a>
+                <a href="#" class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-shadow hover:bg-purple-50">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 mb-4">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </div>
+                    <h3 class="font-medium text-lg mb-2">Instagram</h3>
+                    <p class="text-center text-gray-600">浏览我的照片</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我 -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">联系我</h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="mb-6">
+                        <label for="name" class="block mb-2 font-medium">姓名</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="请输入您的姓名">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block mb-2 font-medium">邮箱</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="请输入您的邮箱">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block mb-2 font-medium">留言</label>
+                        <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="有什么想对我说的？"></textarea>
+                    </div>
+                    <div class="flex justify-end">
+                        <button type="submit" class="bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700 transition-colors shadow-md">发送消息</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-gray-200 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold text-white mb-2">个人空间</h3>
+                    <p class="opacity-75">记录生活，分享感悟</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                        <i class="fab fa-weixin"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-red-600 transition-colors">
+                        <i class="fab fa-weibo"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-blue-600 transition-colors">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-purple-600 transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="border-gray-700 my-8">
+            <div class="text-center">
+                <p>&copy; 2023 个人博客. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
